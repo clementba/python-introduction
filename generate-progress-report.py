@@ -34,13 +34,24 @@ def get_chapter_progress() -> list[ProgressData]:
     return progress_data
 
 def generate_ascii_progress(progress_data: list[ProgressData]):
-    with open('progress.md', 'w') as f:
-        f.write("# Progression des Tests\n\n")
-        for data in progress_data:
-            bar_length = 20
-            filled = int(data.percent / (100 / bar_length))
-            bar = '[' + '=' * filled + '>' + ' ' * (bar_length - filled - 1) + ']'
-            f.write(f"- {data.chapter} {bar} {data.percent}% ({data.passed}/{data.total})\n")
+    with open('README.md', 'r') as f:
+        content = f.readlines()
+
+    start_index = next(i for i, line in enumerate(content) if '<!-- START_PROGRESS -->' in line) + 1
+    end_index = next(i for i, line in enumerate(content) if '<!-- END_PROGRESS -->' in line)
+
+    progress_lines = []
+    for data in progress_data:
+        bar_length = 20
+        filled = int(data.percent / (100 / bar_length))
+        bar = '[' + '=' * filled + '>' + ' ' * (bar_length - filled - 1) + ']'
+        progress_lines.append(f"- {data.chapter} {bar} {data.percent}% ({data.passed}/{data.total})\n")
+
+    content[start_index:end_index] = progress_lines
+
+    with open('README.md', 'w') as f:
+        f.writelines(content)
+        
 
 if __name__ == '__main__':
     progress_data = get_chapter_progress()
