@@ -17,8 +17,3 @@ dependencies = [
     "matplotlib",
     "mypy"
 ]
-
-[tool.pytest.ini_options]
-addopts = "--cov=exercises --cov-report=html --cov-report=term-missing --cov-report=xml --json-report --json-report-file=report.json"
-testpaths = ["exercises"]
-python_files = "test_*.py"
