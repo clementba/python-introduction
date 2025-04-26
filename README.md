@@ -1,3 +1,8 @@
+ Progression des Tests
+<!-- START_PROGRESS -->
+chapter1 [======>             ] 33% (1/3)
+<!-- END_PROGRESS -->
+
 ## Instructions pour démarrer le projet
 
 1. **Forker le dépôt** : Cliquez sur le bouton "Fork" en haut à droite de la page GitHub pour créer une copie du dépôt dans votre compte.
@@ -18,7 +23,3 @@ python -m pip install --upgrade pip
 pip install -e .
 ```
 
-## Progression des Tests
-<!-- START_PROGRESS -->
-chapter1 [======>             ] 33% (1/3)
-<!-- END_PROGRESS -->
