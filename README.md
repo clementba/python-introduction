@@ -1,6 +1,6 @@
  Progression des Tests
 <!-- START_PROGRESS -->
-chapter1 [======>             ] 33% (1/3)
+- chapter1 [====================>] 100% (3/3)
 <!-- END_PROGRESS -->
 
 ## Instructions pour démarrer le projet
