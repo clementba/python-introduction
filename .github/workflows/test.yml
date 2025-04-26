@@ -26,7 +26,7 @@ jobs:
     - name: Run Pytest
       id: pytest
       run: |
-        pytest --tb=short --disable-warnings --json-report --json-report-file=report.json
+        pytest
 
 #    - name: Calculate Test Ratios
 #      run: |
