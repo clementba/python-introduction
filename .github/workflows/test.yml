@@ -26,8 +26,3 @@ jobs:
       - name: Run pytest with coverage
         run: pytest
 
-      - name: Upload test results
-        uses: actions/upload-artifact@v3
-        with:
-          name: report
-          path: report.json
