@@ -17,3 +17,6 @@ Une fois le dépôt cloné, installez les dépendances en exécutant la commande
 python -m pip install --upgrade pip
 pip install -e .
 ```
+
+<!-- START_PROGRESS -->
+<!-- END_PROGRESS -->
