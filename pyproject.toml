@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-intro-exercises"
+version = "0.1.0"
+description = "Exercices d'introduction à Python"
+authors = [{name = "Swan Benoit"}]
+readme = "README.md"
+requires-python = ">=3.13"
+license = {text = "MIT"}
