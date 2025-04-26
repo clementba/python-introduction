@@ -27,40 +27,6 @@ jobs:
       - name: Run pytest with coverage
         run: pytest
 
-      - name: Run tests and generate progress
-        run: |
-          # Récupère la liste des chapitres
-          CHAPTERS=$(ls -d exercises/chapter* | sed 's/exercises\///')
-          
-          # Génère le rapport de progression
-          echo "# Progression des Tests" > progress.md
-          echo "" >> progress.md
-          
-          for chap in $CHAPTERS; do
-            # Compte les exercices
-            TOTAL=$(ls -1 exercises/$chap/*.py | grep -v test_ | wc -l)
-            PASSED=$(pytest exercises/$chap/ --cov=exercises/$chap -q | grep -c "passed")
-          
-            # Calcule le pourcentage
-            PERCENT=$((PASSED * 100 / TOTAL))
-            BAR=$((PERCENT / 5))  # 20 caractères max
-          
-            # Génère la barre
-            BAR_GRAPH="["
-            for ((i=0; i<20; i++)); do
-              if [ $i -lt $BAR ]; then
-                BAR_GRAPH+="="
-              elif [ $i -eq $BAR ]; then
-                BAR_GRAPH+=">"
-              else
-                BAR_GRAPH+=" "
-              fi
-            done
-            BAR_GRAPH+="]"
-          
-            echo "- $chap $BAR_GRAPH $PERCENT%" >> progress.md
-          done
-
       - name: Update README
         run: |
           # Remplace la section progression dans README.md

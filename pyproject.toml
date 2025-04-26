@@ -13,7 +13,9 @@ license = "MIT"
 dependencies = [
     "pytest",
     "pytest-cov",
-    "pytest-json-report"
+    "pytest-json-report",
+    "matplotlib",
+    "mypy"
 ]
 
 [tool.pytest.ini_options]
