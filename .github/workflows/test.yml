@@ -26,10 +26,6 @@ jobs:
       - name: Install dependencies
         run: pip install -e .
 
-      - name: Run pytest with coverage
-        run: pytest
-        continue-on-error: true
-
       - name: generate report
         run: python generate-progress-report.py
 
