@@ -1,7 +1,7 @@
 ## Progression des Tests
 
 <!-- START_PROGRESS -->
-- chapter1 [====================>] 100% (3/3)
+- chapter1 [=============>      ] 66% (2/3)
 - chapter-2 [>                   ] 0% (0/1)
 <!-- END_PROGRESS -->
 
