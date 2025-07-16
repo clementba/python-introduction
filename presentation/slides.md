@@ -153,3 +153,6 @@ src: ./pages/introduction-formation.md
 src: ./pages/pourquoi-python.md
 ---
 
+---
+src: ./pages/python-couteau-suisse.md
+---
