@@ -145,34 +145,3 @@ mdc: true
   </div>
 </div>
 
----
-src: ./slides/01-plan.md
----
-
----
-src: ./slides/02-introduction-python.md
----
-
----
-src: ./slides/03-chapitre1-overview.md
----
-
----
-src: ./slides/04-hello-world.md
----
-
----
-src: ./slides/05-addition.md
----
-
----
-src: ./slides/06-reverse-string.md
----
-
----
-src: ./slides/07-tests-pytest.md
----
-
----
-src: ./slides/08-conclusion.md
----
