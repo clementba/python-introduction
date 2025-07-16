@@ -145,3 +145,7 @@ mdc: true
   </div>
 </div>
 
+---
+src: ./pages/introduction-formation.md
+---
+
