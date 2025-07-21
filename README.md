@@ -1,6 +1,12 @@
 ## Progression des Tests
 
 <!-- START_PROGRESS -->
+- 1-hello [>                   ] 0% (0/1)
+- 2-addition [>                   ] 0% (0/1)
+- 3-reverse [>                   ] 0% (0/1)
+- 4-fizzbuzz [>                   ] 0% (0/0)
+- 5-romanconverter [>                   ] 0% (0/0)
+- 6-bowling [>                   ] 0% (0/0)
 <!-- END_PROGRESS -->
 
 ## Instructions pour démarrer le projet
@@ -20,6 +26,9 @@
 Une fois le dépôt cloné, installez les dépendances en exécutant la commande suivante dans le répertoire du projet :
 ```bash
 python -m pip install --upgrade pip
+```
+```bash
 pip install -e .
 ```
+
 

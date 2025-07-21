@@ -14,7 +14,7 @@ class ProgressData:
 
 
 def get_chapter_progress() -> list[ProgressData]:
-    chapters: list[str] = [d.name for d in Path('exercises').iterdir() if d.is_dir() and d.name.startswith('chapter')]
+    chapters: list[str] = [d.name for d in Path('exercises').iterdir() if d.is_dir() and not d.name.startswith('__')]
     progress_data: list[ProgressData] = []
 
     for chapter in chapters:
