@@ -1,3 +1,23 @@
-#write code here
-def jn():
-    return 1
+def romanNumeral(number):
+    valeurs_romaines = [
+        (1000, 'M'),
+        (900, 'CM'),
+        (500, 'D'),
+        (400, 'CD'),
+        (100, 'C'),
+        (90, 'XC'),
+        (50, 'L'),
+        (40, 'XL'),
+        (10, 'X'),
+        (9, 'IX'),
+        (5, 'V'),
+        (4, 'IV'),
+        (1, 'I')
+    ]
+    resultat = ''
+
+    for valeur, symbole in valeurs_romaines:
+        while number >= valeur:
+            resultat += symbole
+            number -= valeur
+    return resultat
