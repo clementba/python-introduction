@@ -1,7 +1,7 @@
 def fizzbuzz(number: int) -> str:
     if(number % 3 == 0 & number % 5 == 0):
         return "FizzBuzz"
-    if(number % 3):
+    if(number % 3 == 0):
         return "Fizz"
     if '3' in str(number):
         return "Fizz"
@@ -11,3 +11,4 @@ def fizzbuzz(number: int) -> str:
     if '5' in str(number):
         return "Buzz"
     return str(number)
+
