@@ -21,3 +21,26 @@ def romanNumeral(number):
             resultat += symbole
             number -= valeur
     return resultat
+
+
+def entierNumeral(number):
+    valeurs_romaines = {
+        'I': 1,
+        'V': 5,
+        'X': 10,
+        'L': 50,
+        'C': 100,
+        'D': 500,
+        'M': 1000
+    }
+
+    total = 0
+    precedent = 0
+    for symbole_romain in reversed(number):
+        valeur = valeurs_romaines[symbole_romain]
+        if valeur < precedent:
+            total -= valeur
+        else:
+            total += valeur
+            precedent = valeur
+    return total
