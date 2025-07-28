@@ -12,3 +12,6 @@ def test_buzz():
 
 def test_fizz_buz():
      assert fizzbuzz(15) == 'FizzBuzz'
+
+def test_etape2():
+     assert fizzbuzz(15) == 'FizzBuzz'
